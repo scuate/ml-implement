@@ -1,0 +1,29 @@
+state_num=2117
+sym_num=8738
+init_line_num=1
+trans_line_num=95266
+emiss_line_num=404020
+
+\init
+BOS_BOS 1.0     0.0     
+
+
+\transition
+PRP$_PRP$      PRP$_PRP$      0.01254             -1.9017             
+VBG_PRP$       PRP$_PRP$      0.00167039          -2.77718            
+VBD_PRP$       PRP$_PRP$      0.00167039          -2.77718            
+BOS_PRP$       PRP$_PRP$      0.00167039          -2.77718            
+``_PRP$        PRP$_PRP$      0.00167039          -2.77718            
+VBN_PRP$       PRP$_PRP$      0.00167039          -2.77718            
+POS_PRP$       PRP$_PRP$      0.01254             -1.9017             
+
+\emission
+PRP$_PRP$      his                      0.128911            -0.889712           
+PRP$_PRP$      your                     0.0291873           -1.53481            
+PRP$_PRP$      Her                      0.0097291           -2.01193            
+PRP$_PRP$      her                      0.0729682           -1.13687            
+PRP$_PRP$      their                    0.243227            -0.613987           
+PRP$_PRP$      my                       0.0243227           -1.61399            
+PRP$_PRP$      its                      0.420783            -0.375941           
+PRP$_PRP$      Their                    0.00243227          -2.61399            
+PRP$_PRP$      His                      0.00486455          -2.31296            
