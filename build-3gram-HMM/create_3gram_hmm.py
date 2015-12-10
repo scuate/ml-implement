@@ -60,7 +60,8 @@ def cmptVar(uni_tag,bi_tag,tri_tag):
 
 ##write the header and the init prob of the output hmm file
 def writeHeader(outfile,state_num,sym_num,trans_line_num,emiss_line_num)
-    outfile.write('state_num={0}\nsym_num={1}\ninit_line_num={2}\ntrans_line_num={3}\nemiss_line_num={4}\n\n'.format(state_num,sym_num,1,trans_line_num,emiss_line_num))
+    outfile.write('state_num={0}\nsym_num={1}\n'.format(state_num,sym_num))
+    outfile.write('init_line_num={0}\ntrans_line_num={1}\nemiss_line_num={2}\n\n'.format(1,trans_line_num,emiss_line_num))
     outfile.write('\\init\n{0:<8}{1:<8}{2:<8}\n\n\n'.format('BOS_BOS',1.0,0.0))
 
 ##consider all POSSIBLE permutations of t1,t2,t3 sequences(POSSIBLE means exclusion of EOS EOS word,etc.),compute P(t3|t1,t2) = l1*P1(t3)+l2*P2(t3|t2)+l3*P3(t3|t1,t2). P(t3|t1,t2) is represented as the transition prob between t1_t2 and t2_t3-- the from-state is t1_t2; the to-state is t2_t3
